@@ -20,14 +20,17 @@ const Resume = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a 
-            href="#" 
+            href="/resume.pdf" 
+            download="Dharmendra_Pradhan_Resume.pdf"
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-2"
           >
             <Download size={20} />
             Download PDF
           </a>
           <a 
-            href="#" 
+            href="/resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700 text-zinc-100 font-medium transition-all duration-300 hover:scale-[1.02] backdrop-blur-sm flex items-center justify-center gap-2"
           >
             <FileText size={20} />
@@ -37,7 +40,7 @@ const Resume = () => {
         
         <div className="mt-16 p-8 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 backdrop-blur-sm">
           <p className="text-zinc-500 text-sm">
-            * Note: Since the actual PDF file cannot be hosted directly in this environment, these buttons are placeholders. In a real deployment, they would link to the `resume.pdf` file.
+            * Note: Please ensure you have uploaded your actual `resume.pdf` file to the `public` directory for these links to work correctly.
           </p>
         </div>
       </div>
