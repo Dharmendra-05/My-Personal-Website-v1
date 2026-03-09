@@ -18,6 +18,8 @@ export default defineConfig(({mode}) => {
     optimizeDeps: {
       exclude: ['better-sqlite3'],
     },
+    // Base path for GitHub Pages (repo name). Change to '/' when using a custom domain.
+    base: process.env.NODE_ENV === 'production' ? '/My-Personal-Website-v1/' : '/',
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify - file watching is disabled to prevent flickering during agent edits.
