@@ -21,7 +21,7 @@ const Resume = () => (
         {/* Download / View buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download="Dharmendra_Pradhan_Resume.pdf"
             className="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_24px_rgba(245,158,11,0.4)] flex items-center justify-center gap-2"
           >
@@ -29,7 +29,7 @@ const Resume = () => (
             Download PDF
           </a>
           <a
-            href="/resume.pdf"
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 rounded-xl glass-card hover:border-zinc-600 text-zinc-100 font-medium transition-all duration-300 hover:scale-[1.04] flex items-center justify-center gap-2"
